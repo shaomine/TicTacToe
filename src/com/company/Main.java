@@ -1,6 +1,6 @@
 /* Author: Shailendra Singh */
 /*A program based on famous TIC TAC TOE game*/
-/*Developed for UBS coding challenge*/
+
 
 /*Requirements: To Develop a tic tac toe game and have options for Human vs Human */
 /*and Human vs CPU game modes*/
