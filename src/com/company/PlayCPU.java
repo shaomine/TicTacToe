@@ -1,4 +1,5 @@
 package com.company;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -13,16 +14,16 @@ public abstract class PlayCPU {
     protected List<Integer> cpu_positions;         //an arraylist to record cpu moves
     protected static List<List<Integer>> winning_conditions;  // a arraylist to record all winning conditions
 
-    static{
+    static {
         //listing all the possible winning conditions
-        List<Integer> top_row = Arrays.asList(1,2,3);   //top row winning condition
-        List<Integer> mid_row = Arrays.asList(4,5,6);   // and likewise for others
-        List<Integer> bot_row = Arrays.asList(7,8,9);
-        List<Integer> left_col = Arrays.asList(1,4,7);
-        List<Integer> mid_col = Arrays.asList(2,5,8);
-        List<Integer> right_col = Arrays.asList(3,6,9);
-        List<Integer> diagonal1 = Arrays.asList(1,5,9);
-        List<Integer> diagonal2 = Arrays.asList(3,5,7);
+        List<Integer> top_row = Arrays.asList(1, 2, 3);   //top row winning condition
+        List<Integer> mid_row = Arrays.asList(4, 5, 6);   // and likewise for others
+        List<Integer> bot_row = Arrays.asList(7, 8, 9);
+        List<Integer> left_col = Arrays.asList(1, 4, 7);
+        List<Integer> mid_col = Arrays.asList(2, 5, 8);
+        List<Integer> right_col = Arrays.asList(3, 6, 9);
+        List<Integer> diagonal1 = Arrays.asList(1, 5, 9);
+        List<Integer> diagonal2 = Arrays.asList(3, 5, 7);
 
         //adding the individual winning conditions to a list
         winning_conditions = new ArrayList<>();
@@ -37,11 +38,11 @@ public abstract class PlayCPU {
 
     }
 
-    public PlayCPU(char humanMark){
-        if(humanMark=='X'){
+    public PlayCPU(char humanMark) {
+        if (humanMark == 'X') {
             this.humanMark = 'X';
             this.cpuMark = 'O';
-        }else if(humanMark == 'O'){
+        } else if (humanMark == 'O') {
             this.humanMark = 'O';
             this.cpuMark = 'X';
         }
@@ -50,6 +51,4 @@ public abstract class PlayCPU {
         human_positions = new ArrayList<>();
         cpu_positions = new ArrayList<>();
     }
-
-
 }
