@@ -1,4 +1,4 @@
-This program is written purely in JAVA and as such no external dependencies or third part libraries are used.
+This program is written purely in JAVA and as such no external dependencies or third party libraries are used.
 Suggested IDE to run this program: Intellij Idea
 
 Written By: Shailendra Singh
